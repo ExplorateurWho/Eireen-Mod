@@ -13,9 +13,9 @@ displayName = "Eireen Mod"
 
 logoFile = "logo.png"
 
-credits = "Thanks for this example mod goes to Java"
+credits = "Thanks to Josia for creating the mod base"
 
-authors = "Love, Cheese and small house plants" #optional
+authors = "Josia, Explorateur" #optional
 
 description = '''
 Eireen mods is a mod with for the moment an ore named: Electric Ore. It is currently under development. For now, I just want feedback on the mods to see what I might add in the future.

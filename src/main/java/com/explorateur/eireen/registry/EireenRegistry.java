@@ -1,6 +1,9 @@
 package com.explorateur.eireen.registry;
 
-import com.example.examplemod.EireenMod;
+import com.explorateur.eireen.EireenMod;
+import com.explorateur.eireen.common.init.EBlocks;
+import com.explorateur.eireen.common.init.EItems;
+import com.explorateur.eireen.common.items.EItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,11 +18,16 @@ public class EireenRegistry {
 
     public static boolean initialized = false;
 
+    public static EBlocks EBLOCKS;
+    public static EItems EITEMS;
+
     public static void register() {
         final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         if(!initialized) {
 
+            EBLOCKS = new EBlocks();
+            EITEMS = new EItems();
 
             BLOCKS.register(bus);
             ITEMS.register(bus);

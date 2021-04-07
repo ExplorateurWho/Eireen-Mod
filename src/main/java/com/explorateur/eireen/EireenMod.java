@@ -1,5 +1,6 @@
-package com.example.examplemod;
+package com.explorateur.eireen;
 
+import com.explorateur.eireen.registry.EireenRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +21,8 @@ public class EireenMod {
 
     public EireenMod() {
         INSTANCE = this;
+
+        EireenRegistry.register();
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
