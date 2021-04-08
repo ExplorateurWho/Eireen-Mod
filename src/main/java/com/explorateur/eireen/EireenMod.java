@@ -1,6 +1,11 @@
 package com.explorateur.eireen;
 
+import com.explorateur.eireen.client.init.EntityRenderRegistry;
+import com.explorateur.eireen.common.init.EEntities;
 import com.explorateur.eireen.registry.EireenRegistry;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
+import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.passive.CatEntity;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -11,13 +16,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(EireenMod.MODID)
 public class EireenMod {
     public static EireenMod INSTANCE;
 
     public static final String MODID = "eireenmod";
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public EireenMod() {
         INSTANCE = this;
@@ -30,10 +34,11 @@ public class EireenMod {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        GlobalEntityTypeAttributes.put(EEntities.MUTANIC.get(), ZombieEntity.createAttributes().build());
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
+        EntityRenderRegistry.registryEntityRenders();
     }
 
 
