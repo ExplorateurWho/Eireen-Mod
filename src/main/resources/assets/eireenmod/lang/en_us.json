@@ -9,5 +9,6 @@
   "block.eireenmod.amethyst_block": "Amethyst Block",
   "block.eireenmod.electric_ore": "Electric Ore",
   "block.eireenmod.amethyst_ore": "Amethyst Ore",
-  "item.eireenmod.amethyst": "Amethyst"
+  "item.eireenmod.amethyst": "Amethyst",
+  "block.eireenmod.monitor": "Monitor"
 }
