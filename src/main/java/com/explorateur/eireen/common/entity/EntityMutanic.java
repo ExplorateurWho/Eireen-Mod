@@ -28,6 +28,10 @@ public class EntityMutanic extends ZombieEntity {
         super(p_i48549_1_, p_i48549_2_);
     }
 
+    public EntityMutanic(World p_i48549_2_) {
+        super(EEntities.MUTANIC.get(), p_i48549_2_);
+    }
+
     @Override
     protected void defineSynchedData() {
         super.defineSynchedData();
@@ -48,7 +52,5 @@ public class EntityMutanic extends ZombieEntity {
         this.entityData.set(TYPE, id);
     }
 
-    public EntityMutanic(World p_i48549_2_) {
-        super(EEntities.MUTANIC.get(), p_i48549_2_);
-    }
+
 }
