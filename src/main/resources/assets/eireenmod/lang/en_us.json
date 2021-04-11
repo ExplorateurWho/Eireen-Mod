@@ -5,10 +5,13 @@
   "item.eireenmod.electric_shovel": "Electric Shovel",
   "item.eireenmod.electric_pickaxe": "Electric Pickaxe",
   "item.eireenmod.electric": "Electric",
+  "item.eireenmod.amethyst": "Amethyst",
   "item.eireenmod.electric_hoe": "Electric Hoe",
+
   "block.eireenmod.amethyst_block": "Amethyst Block",
   "block.eireenmod.electric_ore": "Electric Ore",
   "block.eireenmod.amethyst_ore": "Amethyst Ore",
-  "item.eireenmod.amethyst": "Amethyst",
-  "block.eireenmod.monitor": "Monitor"
+  "block.eireenmod.monitor": "Monitor",
+
+  "entity.eireenmod.mutanic": "Mutanic"
 }

@@ -6,8 +6,13 @@
     "item.eireenmod.electric_pickaxe": "Pioche en Electrique",
     "item.eireenmod.electric": "Electrique",
     "item.eireenmod.electric_hoe": "Houe en Electrique",
+    "item.eireenmod.amethyst": "Améthyste",
+
     "block.eireenmod.amethyst_block": "Bloc de Améthyste",
     "block.eireenmod.amethyst_ore": "Minerai d'Améthyste",
     "block.eireenmod.electric_ore": "Minerai de Electrique",
-    "item.eireenmod.amethyst": "Améthyste"
+    "block.eireenmod.monitor": "Pas Definee",
+
+    "entity.eireenmod.mutanic": "Pas Definee"
+
   }
