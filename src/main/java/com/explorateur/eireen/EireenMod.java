@@ -3,9 +3,11 @@ package com.explorateur.eireen;
 import com.explorateur.eireen.client.init.EntityRenderRegistry;
 import com.explorateur.eireen.common.init.EEntities;
 import com.explorateur.eireen.registry.EireenRegistry;
+import com.explorateur.eireen.world.OreGeneration;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -27,6 +29,8 @@ public class EireenMod {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
