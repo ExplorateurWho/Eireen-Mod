@@ -10,6 +10,7 @@ public class EItems {
 
     public static RegistryObject<Item> AMETHYST = register(new Item(new Item.Properties().tab(EireenModItemGroups.MISC)), "amethyst");
     public static RegistryObject<Item> ELECTRIC = register(new Item(new Item.Properties().tab(EireenModItemGroups.MISC)), "electric");
+    public static RegistryObject<Item> EMPTY_ELECTRIC = register(new Item(new Item.Properties().tab(EireenModItemGroups.MISC)),"empty_electric");
 
     public static RegistryObject<Item> ELECTRIC_SWORD = register(new SwordItem(EItemTier.ELECTRIC, 2, 1.5f, new Item.Properties().tab(EireenModItemGroups.COMBAT)), "electric_sword");
     public static RegistryObject<Item> ELECTRIC_SHOVEL = register(new ShovelItem(EItemTier.ELECTRIC, 1, 1, new Item.Properties().tab(EireenModItemGroups.TOOLS)), "electric_shovel");
