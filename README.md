@@ -10,7 +10,7 @@
 Eireen Mod is minecraft mod created by [Explorateur_Who](https://github.com/ExplorateurWho).
 
 ## Wiki:
-You can see the wiki about the mod [here](https://eireenmod.fandom.com/fr/f).
+You can see the wiki of the mod [here](https://eireenmod.fandom.com/fr/f).
 
 ## About the code:
 You can edit it BUT you can not publish it.
